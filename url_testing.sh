@@ -1,13 +1,12 @@
 
-file=/home/Srinath/scripts/mailbody.html
+#file=/home/Srinath/scripts/mailbody.html
 
-#file1=$1
+file1=$1
 
 #python -mwebbrowser --exec $src
 
-if [ -f "$file" ]
+if [ -f "$file1" ]
 then
-    firefox /home/Srinath/scripts/mailbody.html
+    firefox $file1
 fi
 exit 0
-
