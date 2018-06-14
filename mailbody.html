@@ -10,6 +10,13 @@ body, html {
     margin: 0;
     line-height: 1.8;
 }
+  ol { counter-reset: item; }
+        ol li { display: block; }
+        ol li:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: red;
+        }
 .bg {
     /* Full height */
     height: 100%; 
